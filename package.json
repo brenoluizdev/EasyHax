@@ -1,0 +1,23 @@
+{
+  "name": "easyhax",
+  "version": "0.0.1",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "type": "commonjs",
+  "scripts": {
+    "dev": "tsup src/index.ts --watch",
+    "build": "tsup src/index.ts --dts",
+    "test": "node ./examples/bot.js"
+  },
+  "dependencies": {
+    "chalk": "^5.6.2",
+    "fs": "^0.0.1-security",
+    "haxball.js": "^3.2.1",
+    "path": "^0.12.7"
+  },
+  "devDependencies": {
+    "@types/node": "^24.10.1",
+    "tsup": "^8.0.1",
+    "typescript": "^5.0.0"
+  }
+}

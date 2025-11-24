@@ -1,0 +1,14 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "target": "ES2020",
+    "strict": true,
+    "moduleResolution": "node",
+    "esModuleInterop": true,
+    "skipLibCheck": true,
+    "declaration": true,
+    "resolveJsonModule": true,
+    "typeRoots": ["./node_modules/@types", "./node_modules/haxball.js/dist"]
+  },
+  "include": ["src"]
+}
