@@ -1,5 +1,5 @@
 {
-  "name": "easyhax",
+  "name": "@brenoluizdev/easyhax",
   "version": "0.0.2",
   "description": "A modern wrapper for haxball.js with event shortcuts and command system.",
   "main": "dist/index.js",
@@ -16,12 +16,11 @@
   "author": "Breno Luiz",
   "license": "MIT",
   "scripts": {
-    "dev": "tsup src/index.ts --watch",
     "build": "tsup src/index.ts --dts",
-    "prepublishOnly": "npm run build",
-    "publish:npm": "npm publish --access public",
-    "publish:github": "cp package.github.json package.json && npm publish && git checkout -- package.json",
-    "publish:all": "npm run publish:npm && npm run publish:github"
+    "prepublishOnly": "npm run build"
+  },
+  "publishConfig": {
+    "registry": "https://npm.pkg.github.com/"
   },
   "dependencies": {
     "chalk": "^5.6.2",
